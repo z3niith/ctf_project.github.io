@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture the Flag Challenge</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Capture the Flag Challenge</h1>
+        <h3>Welcome! Can you find the correct flags?</h3>
+        
+        <div class="challenge">
+            <h2>1. Find the Hidden Flag</h2>
+            <p>Look around the page source and find the hidden flag.</p>
+        </div>
+
+        <div class="challenge">
+            <h2>2. Submit Your Flag</h2>
+            <p>Once you think you know the flag, submit it below:</p>
+            <input type="text" id="flag-input" placeholder="Enter flag here">
+            <button onclick="submitFlag()">Submit Flag</button>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
